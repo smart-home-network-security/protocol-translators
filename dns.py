@@ -9,8 +9,9 @@ class dns(Custom):
 
     # Supported keys in YAML profile
     supported_keys = [
-        "type",        # DNS query type
-        "domain-name"  # DNS domain name
+        "type",         # DNS query type
+        "domain-name",  # DNS domain name
+        "response"      # Whether the DNS message is a response
     ]
 
 

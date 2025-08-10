@@ -47,7 +47,7 @@ class tls(Custom):
                         current_chain = f"{current_chain}->next"
                         conditions.append(f"{current_chain} != NULL")
                     
-                    if value == 20:  # change cipher spec message or much less likely finished handshake encryted message
+                    if value == 20:  # change cipher spec message or much less likely finished handshake encrypted message
                         conditions.append(f"( {current_chain}->message.content_type == {value} || {current_chain}->message.handshake_type == {value} )")
                     else:
                         conditions.append(f"{current_chain}->message.handshake_type == {value}")

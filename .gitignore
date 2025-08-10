@@ -1,2 +1,9 @@
-# Python caches
+# VSCode settings
+.vscode/
+
+# Python stuff
+.venv
 __pycache__
+
+# Test scripts
+test.py
