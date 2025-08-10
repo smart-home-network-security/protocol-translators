@@ -4,6 +4,7 @@
 # Python stuff
 .venv
 __pycache__
+.pytest_cache
 
 # Test scripts
 test.py
